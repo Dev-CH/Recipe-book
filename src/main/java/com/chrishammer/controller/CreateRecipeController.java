@@ -26,7 +26,6 @@ public class CreateRecipeController {
 	@Autowired
 	private MethodService methodService;
 	
-
 	@RequestMapping(value="/addRecipe", method=RequestMethod.GET)
 	public String createRecipe(@ModelAttribute("newRecipe")Recipe newRecipe,@ModelAttribute("newIngredients")Ingredient newIngredients,@ModelAttribute("newMethods") Method newMethods, Model model) {
 		model.addAttribute("newRecipe", newRecipe);
@@ -34,19 +33,17 @@ public class CreateRecipeController {
 		model.addAttribute("newMethods", newMethods);
 		return "create";
 	}
-	
 	@RequestMapping(value="/addRecipe", method=RequestMethod.POST)
 	public String submitNewRecipe(@ModelAttribute Recipe newRecipe,@ModelAttribute Ingredient ingredients,@ModelAttribute Method methods, Model model) {
-		
+
 		Recipe formattedRecipe = FormatInput.formatRecipe(newRecipe);
 		List<Method> newMethods = methodService.createListOfMethods(methods, formattedRecipe);
 		List<Ingredient> newIngredients = ingredientsService.createListOfIngredients(ingredients, formattedRecipe);
-		
+
 		newRecipe.setMethods(newMethods);
 		newRecipe.setIngredients(newIngredients);
 		recipeService.save(formattedRecipe);
-		
+
 		return "redirect:/";
 	}
-	
 }
