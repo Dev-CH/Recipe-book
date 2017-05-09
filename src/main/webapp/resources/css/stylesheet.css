@@ -1,0 +1,240 @@
+html,body {
+	height: 100%;
+    counter-reset: section;	
+}
+.background {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+}
+.wrapper {
+	background-color: white;
+	width: 100%;
+	height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+    min-height:100%; /* real browsers */
+    border-radius: 5px;
+}
+.slender-bar {
+	height: 50px;
+}
+.underlined {
+	text-decoration: underline black;
+}
+.italic {
+	font-style: italic;
+}
+.white-box {
+	padding: 20px;
+	border-radius: 5px;
+	background: white;
+}
+.header-box{
+	/*background:rgb(251, 216, 175);*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbd8af+0,ffffff+89 */
+	background: rgb(252,231,207); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(252,231,207,1) 0%, rgba(255,255,255,1) 89%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(252,231,207,1) 0%,rgba(255,255,255,1) 89%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(252,231,207,1) 0%,rgba(255,255,255,1) 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCE7CF', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	padding:20px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+.box {
+	width:90%;
+	margin-left: 5%;
+	height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+    min-height:100%; /* real browsers */
+}
+
+.someClassName {
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	border: 4px solid white;
+	box-shadow: 1px 1px 5px 1px grey;
+	outline: 1px solid #e9e9e9;
+    outline-offset: -5px;
+}
+.thumbnail-title {
+	text-decoration: none;
+	color: black;
+}
+.side-collumn {
+	margin-top: 50px;
+	height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+    min-height:100%; /* real browsers */
+}
+.side-collumn-img {
+	background-position: center;
+	background-size: cover;
+	margin-left: 20px;
+	border: 2px solid white;
+	box-shadow: 1px 1px 5px 1px grey;
+	width: 100px;
+	height: 100px;
+}
+.break {
+	border-bottom: 1px solid #439bc1;
+	border-top: 0;
+	width: 40px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px 0;	
+}
+.wrap {
+	margin-top: 50px;
+}
+.top-margin {
+	margin-top: 20px;
+}
+.bold {
+	font-weight: bold;
+}
+.main-header {
+	font-weight: bold;
+	font-style: italic;
+	display: block;
+	margin-bottom: 3%;
+}
+.side-collumn-heading {
+	font-weight: bold; 
+}
+.extra-info {
+	font-style: italic;
+	text-align: center;
+	color: black;
+}
+/* Specific Recipe Details Styling*/
+.details-header {
+	font-weight: bold;
+}
+.button{
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: #e9e9e9;
+}
+button:hover {
+	background-color: #d3d2d4;
+}
+.details-img {	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 90%;
+	height: 70%;
+	border: 10px white solid;
+	box-shadow: 1px 1px 5px 1px grey;
+	margin-top: 30px;
+	margin-left: 30px;
+    outline: 1px solid #e9e9e9;
+    outline-offset: -10px;
+}
+.copyright {
+	position: absolute;
+	left:0;
+	color: black;
+	margin-left: 30px;
+	font-size: 12px;
+}
+.bp {
+	margin-left: 5px;
+}
+.filler {
+	width:20px;
+}
+table {
+	font-size: 14px;
+}
+/* Create Recipe Styling */
+input {
+	padding: 3px;
+}
+.form-wrapper {
+	background-color: #e9e9e9;
+	width: 100%;
+	height: auto;
+	padding:40px;
+	margin-top:20px;
+}
+.form-input {
+	margin-top:0px;
+	margin-bottom:10px;
+	width:80%;
+	border:1px solid #d3d2d4;
+}
+.ingredient-input {
+	
+	margin-top:0px;
+	margin-left:10px;
+	width:50%;
+	border:1px solid #d3d2d4;
+}
+.form-bio {
+	margin-top:0px;
+	margin-bottom:10px;
+	width:80%;
+	height: 30%;
+	border:1px solid #d3d2d4;
+}
+.placeholder {
+	float:left;
+	display:block;
+	text-decoration:none;
+}
+.delete-ingredient {
+	 float: right;
+	position: relative;
+	margin-top: -25px;
+}
+.delete-method {
+	float: right;
+	position: relative;
+	margin-top:5px;
+}
+.method-input {
+	width: 90%;
+	border:1px solid #d3d2d4;
+	
+} 
+.step::before {
+    counter-increment: section;
+    content: "Step " counter(section) " :";
+    font-style: italic;
+}
+.submit-button {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid grey;
+	background-color: #e9e9e9;
+	margin-top: 20px;
+	color: #337ab7;
+	border:1px solid #d3d2d4;
+}
+/* Edit Recipe Styling */
+existing-delete-m {
+	margin-left:5px;
+}
